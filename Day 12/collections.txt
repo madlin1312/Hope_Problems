@@ -1,0 +1,49 @@
+Collection framework:
+    Why collections?
+    Mostly we'll utilize arrys for everything to store continuosly.
+    int[] a= new int[size]-->actual-->fixed size!!
+    we cannot extend the array as per array wish during run time.
+    this is the main reason for JCF to make into handy.
+
+    What is JCF?
+        Java collection framework which has additional functionalities.
+
+        origination of jcg:
+                interface--->collections---> ->List  ->Array List
+                                                     ->linked List
+                                             ->set   ->Hashset
+                                                     ->linked hash set
+                                                     ->treeset
+                                             ->map   ->Hashmap
+                                                     ->Tree map
+                                             ->Queue ->Deque
+
+    List:
+        List has two types:
+        1.Arraylist
+        2.Linkedlist
+
+        ->memory allocation of arraylist.
+            ->initially the memory of array list is 10.
+
+            new ArrayList<>();
+            [_,_,_,_,_,_,_,_,_,_]
+            
+
+            ->old memory=10.
+            ->new memory=old memory+(old memory/2);
+
+                =10+10/2.
+                =15
+
+            once the memory is full...automatically the new memory kicks in.
+            [1,2,3,4,5,6,7,8,9,10,_,_,_,_,_]
+
+            
+    Linked list:
+        class Node{
+            int data;
+            Node next;
+            NOde prev;
+        }
+

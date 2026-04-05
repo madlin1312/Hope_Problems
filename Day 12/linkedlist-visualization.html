@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linked List Animation</title>
+    <link rel="stylesheet" href="linkedlist-visualization.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <header>
+            <h1>Linked List Animation</h1>
+            <p>Visualizing the Java <code>linkedlist.java</code> example with animated node operations.</p>
+        </header>
+
+        <main>
+            <section class="left-panel">
+                <div class="code-card">
+                    <h2>Java Code</h2>
+                    <pre><code>import java.util.*;
+public class linkedlist {
+    public static void main(String[] args) {
+        List<String> runningrace = new LinkedList<>();
+        runningrace.add("A");
+        runningrace.add("B");
+        runningrace.add("C");
+        System.out.println(runningrace);
+        runningrace.addFirst("startrace");
+        System.out.println(runningrace);
+        runningrace.remove("B");
+        System.out.println("B is Disqualified");
+        System.out.println(runningrace);
+        System.out.println("A won the race");
+        System.out.println("Race is completed!!");
+        runningrace.clear();
+        System.out.println(runningrace);
+    }
+}</code></pre>
+                </div>
+
+                <div class="controls-card">
+                    <h2>Controls</h2>
+                    <div class="button-row">
+                        <button id="prevBtn">Previous</button>
+                        <button id="playBtn">Play</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                    <div class="checkbox-row">
+                        <label><input id="autoLoop" type="checkbox" /> Loop animation</label>
+                    </div>
+                    <div class="status-box" id="statusBox">Step 1 of 5: Initialize list</div>
+                </div>
+            </section>
+
+            <section class="right-panel">
+                <div class="visual-card">
+                    <h2>Linked List Visualization</h2>
+                    <div class="list-area" id="listArea"></div>
+                </div>
+
+                <div class="console-card">
+                    <h2>Console Output</h2>
+                    <div class="console-output" id="consoleOutput"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="linkedlist-visualization.js"></script>
+</body>
+</html>

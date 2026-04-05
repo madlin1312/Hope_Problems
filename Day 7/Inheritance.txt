@@ -1,0 +1,35 @@
+INHERITANCE:
+    ->passing from previous gen to next gen iteratively.
+    ->for this we need a top class(parent).
+    ->top class(parent)->Top/bottom class(child).
+    ->it is similar to gene or genetics.
+    
+    **What is Inheritance?
+        ->properties or behaviors thats been transferred from parent class to child class is called Inheritance.
+        ->child class uses features of parent class.
+        ->For an instance/Example-->Animals(parent class)->lion(child class).
+
+    ->to use the property of parent we use keyword "extends" along with the other child class.
+    ->Main class which holds main function.
+    ->child class extends parent class.
+    ->parent class is present.
+
+    **What is the hierarchy of compilation?
+        ->Main class will be compiled and main class file will be generated.I have a statement for the child class object.
+        ->child class will be called but parent class file will be generated 1st then child class will be generated.
+    
+    ->ex: Parent p=new Child();
+            parent->class loader;
+            p->stack;
+            new Child();->heap;
+    **Types of Inheritance:
+        1.Single inheritance.
+        2.multilevel inheritance.
+        3.multiple inheritance.
+        4.heirarchial inheritance.
+        5.hybrid inheritance.
+
+        -->java supports only 3 types of inheritance directly(1,2,4) and it supports mutiple inheritance indirectly but doesn't support
+           hybrid inheritance.
+
+IS-A RELATIONSHIP:
